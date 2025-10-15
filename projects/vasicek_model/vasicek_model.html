@@ -11,9 +11,7 @@
 
   <h2>Python Code</h2>
   <pre>
-  <!-- Paste your Python code here, or link to GitHub -->
-  <code>
-  <!-- Example: show first few lines -->
+  <!-- Paste your Python code here -->
   import pandas as pd
 import numpy as np
 import yfinance as yf
@@ -201,17 +199,27 @@ if __name__ == "__main__":
     
     # Step 5: Plot results
     plot_paths(paths, n_plot=100, T=T)
+
   ...
-  </code>
   </pre>
 
-  <h2>README / Description</h2>
-  <p>
-  Simple Python implementation for calibrating and simulating the Vasicek short-rate model using historical data. Downloads interest rate data, fits the model, and runs Monte Carlo simulations.
-  </p>
+  <h2>Description</h2>
+  <p>Simple Python implementation for calibrating and simulating the Vasicek short-rate model. Downloads interest rate data, fits the model, and runs Monte Carlo simulations.</p>
 
-  <h2>Plots / Output</h2>
-  <img src="images/sample_plot.png" alt="Sample Plot" width="600">
+  <h2>Setup</h2>
+  <pre>
+  pip install pandas numpy yfinance scipy matplotlib
+  </pre>
+
+  <h2>Usage</h2>
+  <pre>
+  # Example
+  data = dwnld_cln_data("^IRX", "2023-01-01", "2024-12-01")
+  a, b, sigma = calibrate_vasicek(data)
+  r0 = data["actual_IRX"].iloc[-1]
+  paths = simulate_vasicek_paths(r0, a, b, sigma, T=1, n_steps=252, n_paths=5000)
+  plot_paths(paths, n_plot=50)
+  </pre>
 
   <p><a href="../../index.html">Back to Home</a></p>
 </body>
