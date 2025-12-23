@@ -2,88 +2,121 @@
 <html>
 <head>
   <title>Dixit Gajjar | Quant Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; background: #f8f9fa; }
-    h1 { color: #0070f3; }
-    h2 { margin-top: 30px; }
-    ul { list-style-type: none; padding-left: 0; }
-    li { margin: 10px 0; }
-    a { text-decoration: none; color: #0070f3; }
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      cursor: pointer;
-      background-color: #0070f3;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      margin-top: 5px;
-    }
-    button:hover {
-      background-color: #005bb5;
-    }
-  </style>
 </head>
 <body>
-  <h1>Hello, I’m Dixit Gajjar 👋</h1>
-  <p>M.S. Financial Engineering @ Stevens Institute of Technology</p>
-  <p>Interested in Quantitative Research, Algorithmic Trading, and Machine Learning.</p>
 
-  <h2>Projects</h2>
-  <ul>
-  <li>
-    American Option Pricing using LSM
-    <br>
-    <a href="https://drive.google.com/file/d/1_AlztWP8aGO9Zus5KrasZzIQa1WUfISj/view" target="_blank">
-      <button>American Option Pricing using LSM</button>
-    </a>
-  </li>
-  <li>
-    <a href="projects/hft_algorithm.html">High-Frequency Trading Algorithm</a>
-  </li>
-  <li>
-    <a href="projects/portfolio_risk.html">Portfolio Risk Management (VaR & CVaR)</a>
-  </li>
-  <li>
-    Vasicek Interest Rate Model
-    <br>
-    <a href="https://dixitmgajjarappio-77wx7hvctwmspqrvzxfr2s.streamlit.app/" target="_blank">
-      <button>Open Vasicek Simulator</button>
-    </a>
-  </li>
-  <li>
-    CIR Interest Rate Model
-    <br>
-    <a href="https://dixitmgajjarappio-meguoxxmexwyetqx7zdqdf.streamlit.app/" target="_blank">
-      <button>Open CIR Simulator</button>
-    </a>
-  </li>
-  <li>
-    India Birth Rate
-    <br>
-    <a href="https://dixitmgajjar.github.io/india_birth_rate/india_map.html" target="_blank">
-      <button>Open India Birth Rate(Only Highlighted)</button>
-    </a>
-  </li>
-  <li>
-    India Birth Rate Live!
-    <br>
-    <a href="https://dixitmgajjar.github.io/india_birth_rate_blink/india_map.html" target="_blank">
-      <button>Open India Birth Rate Blinks whenever a baby is born in any state(Aware of the bug that some states are not blinking will working on it soon)</button>
-    </a>
-  </li>
-  <li>
-    Open Analyzing Tesla Trade and Quote Data:Liquidity, Volatility, and PIN
-    <br>
-    <a href="https://drive.google.com/file/d/1lsCRr0emRzpWOaiw4b1s-w95pxTbLzQ4/view" target="_blank">
-      <button>Open Analyzing Tesla Trade and Quote Data:Liquidity, Volatility, and PIN</button>
-    </a>
-  </li>
-</ul>
+<div class="container">
 
+  <header>
+    <h1>Hello, I’m Dixit Gajjar 👋</h1>
+    <p class="subtitle">M.S. Financial Engineering @ Stevens Institute of Technology</p>
+    <p>Specializing in Quantitative Research, Algorithmic Trading, and Market Microstructure.</p>
+    
+    <a href="https://linkedin.com/in/dixitgajjar" class="btn btn-primary" target="_blank">Connect on LinkedIn</a>
+    <a href="mailto:dixit.m.gajjar@gmail.com" class="btn btn-outline">Email Me</a>
+  </header>
 
-  <h2>Contact</h2>
-  <p>Email: dixit.m.gajjar@gmail.com | <a href="https://linkedin.com/in/dixitgajjar">LinkedIn</a></p>
+  <h2>Quantitative Finance & Trading</h2>
+
+  <div class="project-card">
+    <span class="project-title">Market Microstructure Analysis: Tesla (TSLA)</span>
+    <div class="tech-tags">
+      <span class="tech-stack">Python</span>
+      <span class="tech-stack">Pandas</span>
+      <span class="tech-stack">Market Microstructure</span>
+    </div>
+    <p class="project-desc">
+      Analyzed high-frequency Trade and Quote (TAQ) data to estimate liquidity metrics, volatility, and Probability of Informed Trading (PIN).
+    </p>
+    <a href="https://drive.google.com/file/d/1lsCRr0emRzpWOaiw4b1s-w95pxTbLzQ4/view" target="_blank" class="btn btn-primary">View Report</a>
+  </div>
+
+  <div class="project-card">
+    <span class="project-title">American Option Pricing (LSM Algorithm)</span>
+    <div class="tech-tags">
+      <span class="tech-stack">Python</span>
+      <span class="tech-stack">Monte Carlo</span>
+      <span class="tech-stack">NumPy</span>
+    </div>
+    <p class="project-desc">
+      Implemented the Longstaff-Schwartz Method (LSM) to price American Options using Least Squares Monte Carlo simulation.
+    </p>
+    <a href="https://drive.google.com/file/d/1_AlztWP8aGO9Zus5KrasZzIQa1WUfISj/view" target="_blank" class="btn btn-primary">View Report</a>
+  </div>
+
+  <div class="project-card">
+    <span class="project-title">Vasicek Interest Rate Model Simulator</span>
+    <div class="tech-tags">
+      <span class="tech-stack">Streamlit</span>
+      <span class="tech-stack">Stochastic Calculus</span>
+      <span class="tech-stack">Python</span>
+    </div>
+    <p class="project-desc">
+      Interactive dashboard simulating interest rate paths using the Vasicek mean-reverting stochastic differential equation.
+    </p>
+    <a href="https://dixitmgajjarappio-77wx7hvctwmspqrvzxfr2s.streamlit.app/" target="_blank" class="btn btn-primary">Launch Simulator</a>
+  </div>
+
+  <div class="project-card">
+    <span class="project-title">CIR Interest Rate Model Simulator</span>
+    <div class="tech-tags">
+      <span class="tech-stack">Streamlit</span>
+      <span class="tech-stack">Risk Modeling</span>
+    </div>
+    <p class="project-desc">
+      Cox-Ingersoll-Ross (CIR) model simulation preventing negative interest rates, built for analyzing term structure dynamics.
+    </p>
+    <a href="https://dixitmgajjarappio-meguoxxmexwyetqx7zdqdf.streamlit.app/" target="_blank" class="btn btn-primary">Launch Simulator</a>
+  </div>
+
+  <div class="project-card">
+    <span class="project-title">High-Frequency Trading Algorithm</span>
+    <div class="tech-tags">
+      <span class="tech-stack">C++ / Python</span>
+      <span class="tech-stack">Algo Trading</span>
+    </div>
+    <p class="project-desc">
+      Execution strategies and signal generation for high-frequency environments.
+    </p>
+    <a href="projects/hft_algorithm.html" class="btn btn-primary">View Project Page</a>
+  </div>
+
+  <div class="project-card">
+    <span class="project-title">Portfolio Risk Management</span>
+    <div class="tech-tags">
+      <span class="tech-stack">Python</span>
+      <span class="tech-stack">VaR / CVaR</span>
+    </div>
+    <p class="project-desc">
+      Risk modeling using Value at Risk (VaR) and Conditional Value at Risk (CVaR).
+    </p>
+    <a href="projects/portfolio_risk.html" class="btn btn-primary">View Project Page</a>
+  </div>
+
+  <h2>Data Visualization & Other Projects</h2>
+
+  <div class="project-card">
+    <span class="project-title">India Live Birth Rate Tracker</span>
+    <div class="tech-tags">
+      <span class="tech-stack">JavaScript</span>
+      <span class="tech-stack">D3.js</span>
+      <span class="tech-stack">Data Viz</span>
+    </div>
+    <p class="project-desc">
+      Interactive map visualizing real-time birth statistics across Indian states. 
+    </p>
+    <a href="https://dixitmgajjar.github.io/india_birth_rate_blink/india_map.html" target="_blank" class="btn btn-primary">View Live Map</a>
+    <a href="https://dixitmgajjar.github.io/india_birth_rate/india_map.html" target="_blank" class="btn btn-outline">View Static Map</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Dixit Gajjar.</p>
+  </footer>
+
+</div>
+
 </body>
 </html>
