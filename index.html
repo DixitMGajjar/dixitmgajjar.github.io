@@ -1,119 +1,321 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Dixit Gajjar | Quant Portfolio</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <title>Dixit Gajjar | Quant Portfolio</title>
+  <style>
+    /* --- CSS STYLES START HERE --- */
+    
+    /* Global Reset & Typography */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f4f6f8; /* Light grey/blue background */
+      color: #333;
+      line-height: 1.6;
+      padding-bottom: 60px;
+    }
+
+    /* Layout Container */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    /* Header Section */
+    header {
+      text-align: left;
+      margin-bottom: 60px;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #111;
+      margin-bottom: 10px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      color: #555;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .bio {
+      color: #666;
+      margin-bottom: 25px;
+      max-width: 700px;
+    }
+
+    /* Buttons */
+    .btn-group {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background-color: #0056b3; /* Professional Blue */
+      color: white;
+      border: 1px solid #0056b3;
+    }
+
+    .btn-primary:hover {
+      background-color: #004494;
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      color: #0056b3;
+      border: 1px solid #0056b3;
+    }
+
+    .btn-outline:hover {
+      background-color: #eef4ff;
+    }
+
+    /* Section Headings */
+    h2 {
+      font-size: 1.5rem;
+      color: #222;
+      margin: 40px 0 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e1e4e8;
+    }
+
+    /* Project Cards */
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.04);
+      border: 1px solid #eaeaea;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+      border-color: #0056b3;
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .project-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .project-desc {
+      color: #555;
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
+
+    /* Tech Stack Badges */
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tech-stack {
+      background: #f0f7ff;
+      color: #0056b3;
+      font-size: 0.85rem;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-weight: 600;
+      border: 1px solid #dbeafe;
+    }
+
+    /* Card Action Link */
+    .card-action {
+      display: inline-block;
+      font-weight: 600;
+      color: #0056b3;
+      text-decoration: none;
+      margin-top: 5px;
+      border-bottom: 2px solid transparent;
+    }
+    
+    .card-action:hover {
+      border-bottom: 2px solid #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 80px;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 600px) {
+      .container { padding: 30px 15px; }
+      h1 { font-size: 2rem; }
+    }
+  </style>
 </head>
 <body>
 
 <div class="container">
 
   <header>
-    <h1>Hello, I’m Dixit Gajjar 👋</h1>
+    <h1>Dixit Gajjar</h1>
     <p class="subtitle">M.S. Financial Engineering @ Stevens Institute of Technology</p>
-    <p>Specializing in Quantitative Research, Algorithmic Trading, and Market Microstructure.</p>
+    <p class="bio">
+      Quantitative researcher focused on <strong>Algorithmic Trading</strong>, <strong>Market Microstructure</strong>, and <strong>Risk Modeling</strong>. 
+      Skilled in building high-performance backtesting engines and stochastic simulators.
+    </p>
     
-    <a href="https://linkedin.com/in/dixitgajjar" class="btn btn-primary" target="_blank">Connect on LinkedIn</a>
-    <a href="mailto:dixit.m.gajjar@gmail.com" class="btn btn-outline">Email Me</a>
+    <div class="btn-group">
+      <a href="https://linkedin.com/in/dixitgajjar" class="btn btn-primary" target="_blank">Connect on LinkedIn</a>
+      <a href="mailto:dixit.m.gajjar@gmail.com" class="btn btn-outline">Email Me</a>
+    </div>
   </header>
 
-  <h2>Quantitative Finance & Trading</h2>
+  <h2>Quantitative Finance Projects</h2>
 
   <div class="project-card">
-    <span class="project-title">Market Microstructure Analysis: Tesla (TSLA)</span>
-    <div class="tech-tags">
-      <span class="tech-stack">Python</span>
-      <span class="tech-stack">Pandas</span>
-      <span class="tech-stack">Market Microstructure</span>
+    <div class="card-header">
+      <div class="project-title">Market Microstructure Analysis: Tesla (TSLA)</div>
+      <div class="tech-tags">
+        <span class="tech-stack">Python</span>
+        <span class="tech-stack">Pandas</span>
+        <span class="tech-stack">TAQ Data</span>
+      </div>
     </div>
     <p class="project-desc">
-      Analyzed high-frequency Trade and Quote (TAQ) data to estimate liquidity metrics, volatility, and Probability of Informed Trading (PIN).
+      Processed high-frequency Trade and Quote (TAQ) data to estimate liquidity metrics, volatility surface, and Probability of Informed Trading (PIN).
     </p>
-    <a href="https://drive.google.com/file/d/1lsCRr0emRzpWOaiw4b1s-w95pxTbLzQ4/view" target="_blank" class="btn btn-primary">View Report</a>
+    <a href="https://drive.google.com/file/d/1lsCRr0emRzpWOaiw4b1s-w95pxTbLzQ4/view" target="_blank" class="card-action">View Analysis Report →</a>
   </div>
 
   <div class="project-card">
-    <span class="project-title">American Option Pricing (LSM Algorithm)</span>
-    <div class="tech-tags">
-      <span class="tech-stack">Python</span>
-      <span class="tech-stack">Monte Carlo</span>
-      <span class="tech-stack">NumPy</span>
+    <div class="card-header">
+      <div class="project-title">American Option Pricing (LSM Algorithm)</div>
+      <div class="tech-tags">
+        <span class="tech-stack">Python</span>
+        <span class="tech-stack">Monte Carlo</span>
+        <span class="tech-stack">NumPy</span>
+      </div>
     </div>
     <p class="project-desc">
-      Implemented the Longstaff-Schwartz Method (LSM) to price American Options using Least Squares Monte Carlo simulation.
+      Implemented the Longstaff-Schwartz Method (LSM) to accurately price American Options using Least Squares Monte Carlo simulation techniques.
     </p>
-    <a href="https://drive.google.com/file/d/1_AlztWP8aGO9Zus5KrasZzIQa1WUfISj/view" target="_blank" class="btn btn-primary">View Report</a>
+    <a href="https://drive.google.com/file/d/1_AlztWP8aGO9Zus5KrasZzIQa1WUfISj/view" target="_blank" class="card-action">View Technical Report →</a>
   </div>
 
   <div class="project-card">
-    <span class="project-title">Vasicek Interest Rate Model Simulator</span>
-    <div class="tech-tags">
-      <span class="tech-stack">Streamlit</span>
-      <span class="tech-stack">Stochastic Calculus</span>
-      <span class="tech-stack">Python</span>
+    <div class="card-header">
+      <div class="project-title">Vasicek Interest Rate Simulator</div>
+      <div class="tech-tags">
+        <span class="tech-stack">Streamlit</span>
+        <span class="tech-stack">Stochastic Calculus</span>
+        <span class="tech-stack">Rates</span>
+      </div>
     </div>
     <p class="project-desc">
-      Interactive dashboard simulating interest rate paths using the Vasicek mean-reverting stochastic differential equation.
+      Interactive dashboard that simulates interest rate paths using the Vasicek mean-reverting stochastic differential equation.
     </p>
-    <a href="https://dixitmgajjarappio-77wx7hvctwmspqrvzxfr2s.streamlit.app/" target="_blank" class="btn btn-primary">Launch Simulator</a>
+    <a href="https://dixitmgajjarappio-77wx7hvctwmspqrvzxfr2s.streamlit.app/" target="_blank" class="card-action">Launch Simulator →</a>
   </div>
 
   <div class="project-card">
-    <span class="project-title">CIR Interest Rate Model Simulator</span>
-    <div class="tech-tags">
-      <span class="tech-stack">Streamlit</span>
-      <span class="tech-stack">Risk Modeling</span>
+    <div class="card-header">
+      <div class="project-title">CIR Interest Rate Model</div>
+      <div class="tech-tags">
+        <span class="tech-stack">Streamlit</span>
+        <span class="tech-stack">Risk Modeling</span>
+      </div>
     </div>
     <p class="project-desc">
-      Cox-Ingersoll-Ross (CIR) model simulation preventing negative interest rates, built for analyzing term structure dynamics.
+      Cox-Ingersoll-Ross (CIR) model simulation. Prevents negative interest rates and allows users to visualize term structure dynamics.
     </p>
-    <a href="https://dixitmgajjarappio-meguoxxmexwyetqx7zdqdf.streamlit.app/" target="_blank" class="btn btn-primary">Launch Simulator</a>
+    <a href="https://dixitmgajjarappio-meguoxxmexwyetqx7zdqdf.streamlit.app/" target="_blank" class="card-action">Launch Simulator →</a>
   </div>
 
   <div class="project-card">
-    <span class="project-title">High-Frequency Trading Algorithm</span>
-    <div class="tech-tags">
-      <span class="tech-stack">C++ / Python</span>
-      <span class="tech-stack">Algo Trading</span>
+    <div class="card-header">
+      <div class="project-title">High-Frequency Trading Algorithm</div>
+      <div class="tech-tags">
+        <span class="tech-stack">C++ / Python</span>
+        <span class="tech-stack">Algo Trading</span>
+      </div>
     </div>
     <p class="project-desc">
-      Execution strategies and signal generation for high-frequency environments.
+      Execution strategies and signal generation engine designed for high-frequency trading environments.
     </p>
-    <a href="projects/hft_algorithm.html" class="btn btn-primary">View Project Page</a>
+    <a href="projects/hft_algorithm.html" class="card-action">View Project Page →</a>
   </div>
 
   <div class="project-card">
-    <span class="project-title">Portfolio Risk Management</span>
-    <div class="tech-tags">
-      <span class="tech-stack">Python</span>
-      <span class="tech-stack">VaR / CVaR</span>
+    <div class="card-header">
+      <div class="project-title">Portfolio Risk Management</div>
+      <div class="tech-tags">
+        <span class="tech-stack">Python</span>
+        <span class="tech-stack">VaR / CVaR</span>
+      </div>
     </div>
     <p class="project-desc">
-      Risk modeling using Value at Risk (VaR) and Conditional Value at Risk (CVaR).
+      Comprehensive risk modeling using Value at Risk (VaR) and Conditional Value at Risk (CVaR) for multi-asset portfolios.
     </p>
-    <a href="projects/portfolio_risk.html" class="btn btn-primary">View Project Page</a>
+    <a href="projects/portfolio_risk.html" class="card-action">View Project Page →</a>
   </div>
 
-  <h2>Data Visualization & Other Projects</h2>
+  <h2>Data Visualization</h2>
 
   <div class="project-card">
-    <span class="project-title">India Live Birth Rate Tracker</span>
-    <div class="tech-tags">
-      <span class="tech-stack">JavaScript</span>
-      <span class="tech-stack">D3.js</span>
-      <span class="tech-stack">Data Viz</span>
+    <div class="card-header">
+      <div class="project-title">India Live Birth Rate Tracker</div>
+      <div class="tech-tags">
+        <span class="tech-stack">JavaScript</span>
+        <span class="tech-stack">D3.js</span>
+      </div>
     </div>
     <p class="project-desc">
-      Interactive map visualizing real-time birth statistics across Indian states. 
+      Interactive map visualizing real-time birth statistics across Indian states.
     </p>
-    <a href="https://dixitmgajjar.github.io/india_birth_rate_blink/india_map.html" target="_blank" class="btn btn-primary">View Live Map</a>
-    <a href="https://dixitmgajjar.github.io/india_birth_rate/india_map.html" target="_blank" class="btn btn-outline">View Static Map</a>
+    <a href="https://dixitmgajjar.github.io/india_birth_rate_blink/india_map.html" target="_blank" class="card-action">View Live Map →</a>
   </div>
 
   <footer>
-    <p>&copy; 2025 Dixit Gajjar.</p>
+    <p>&copy; 2025 Dixit Gajjar. | <a href="https://linkedin.com/in/dixitgajjar" style="color:#666;">LinkedIn</a></p>
   </footer>
 
 </div>
