@@ -16,7 +16,7 @@
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: #f4f6f8; /* Light grey/blue background */
+      background-color: #f4f6f8;
       color: #333;
       line-height: 1.6;
       padding-bottom: 60px;
@@ -78,7 +78,7 @@
     }
 
     .btn-primary {
-      background-color: #0056b3; /* Professional Blue */
+      background-color: #0056b3;
       color: white;
       border: 1px solid #0056b3;
     }
@@ -137,10 +137,9 @@
       font-size: 1.3rem;
       font-weight: 700;
       color: #111;
-      width: 100%; /* Ensures title takes full width on small screens */
+      width: 100%;
     }
     
-    /* Adjusted for better alignment */
     .header-top {
         display: flex;
         justify-content: space-between;
@@ -193,7 +192,6 @@
       font-size: 0.9rem;
     }
 
-    /* Mobile adjustments */
     @media (max-width: 600px) {
       .container { padding: 30px 15px; }
       h1 { font-size: 2rem; }
@@ -222,31 +220,6 @@
   <h2>Quantitative Finance Projects</h2>
 
   <div class="project-card">
-    <div class="card-header">
-      <div class="header-top">
-          <div class="project-title">Automated Quant Trading System </div>
-          <div class="tech-tags">
-            <span class="tech-stack">Python</span>
-            <span class="tech-stack">Alpaca API</span>
-            <span class="tech-stack">ML</span>
-            <span class="tech-stack">GitHub Actions</span>
-          </div>
-      </div>
-      
-      <img src="https://github.com/DixitMGajjar/alpacaBot/actions/workflows/main.yml/badge.svg" alt="Build Status" style="height: 20px;">
-    <div class="project-card">
-    <div class="card-header">
-      <div class="header-top">
-          <div class="project-title">Deep Momentum Transformer (Capstone)</div>
-          <div class="tech-tags">
-            <span class="tech-stack">TensorFlow 2.x</span>
-            <span class="tech-stack">Yahoo Finance</span>
-            <span class="tech-stack">Transformers</span>
-          </div>
-      </div>
-    </div>
-
-   <div class="project-card">
     <div class="card-header">
       <div class="header-top">
           <div class="project-title">Deep Momentum Transformer (Capstone)</div>
@@ -278,6 +251,22 @@
 
     <a href="https://github.com/DixitMGajjar/Trading-with-the-Momentum-Transformer" target="_blank" class="card-action">View Refactored Code →</a>
   </div>
+
+  <div class="project-card">
+    <div class="card-header">
+      <div class="header-top">
+          <div class="project-title">Automated Quant Trading System</div>
+          <div class="tech-tags">
+            <span class="tech-stack">Python</span>
+            <span class="tech-stack">Alpaca API</span>
+            <span class="tech-stack">ML</span>
+            <span class="tech-stack">GitHub Actions</span>
+          </div>
+      </div>
+      
+      <img src="https://github.com/DixitMGajjar/alpacaBot/actions/workflows/main.yml/badge.svg" alt="Build Status" style="height: 20px;">
+    </div>
+
     <p class="project-desc">
       A fully automated paper-trading engine deployed on the cloud. The system implements a <strong>multi-factor strategy</strong> combining mean-reversion and trend-following signals.
     </p>
@@ -296,6 +285,7 @@
 
     <a href="https://github.com/DixitMGajjar/alpacaBot" target="_blank" class="card-action">View Source Code & Strategy Logic →</a>
   </div>
+
   <div class="project-card">
     <div class="card-header">
       <div class="project-title">Market Microstructure Analysis: Tesla (TSLA)</div>
